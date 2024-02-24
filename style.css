@@ -1,0 +1,311 @@
+:root {
+    font-size: 18px;
+}
+
+*, 
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+.white-background {
+    padding: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.logo img {
+    
+    width: 125px;
+}
+
+.logo {
+    padding-top: 6rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    background: url(../images/bg-header-mobile.png) no-repeat center center/cover;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: clamp(1.75rem, 1.38rem + 1.775vw, 2.8rem);
+    margin-bottom: 1rem;
+    color: hsl(210, 10%, 33%);
+    transition: font-size 0.7s ease;
+}
+
+p {
+    font-weight: 400;
+    font-size: clamp(0.9rem, 0.83rem + 0.338vw, 1.1rem);
+    margin-bottom: 1rem;
+    line-height: 1.4rem;
+    margin-bottom: 2rem;
+    color: hsl(201, 11%, 66%);
+    width: min(700px, 100%);
+    transition: font-size 0.7s ease;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: min(670px, 100%);
+    gap: 1rem;
+}
+
+.ios {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: min(240px,100%);
+    height: 55px;
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0 0.5rem 1.5rem -0.5rem rgba(38,186,164,1);
+    border: none;
+    border-radius: 20rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.mac {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: min(240px,100%);
+    height: 55px;
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0 0.5rem 1.5rem -0.5rem rgba(97,115,255,1);
+    border: none;
+    border-radius: 20rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+h2 {
+    font-weight: 600;
+    font-size: clamp(1.5rem, 1.394rem + 0.507vw, 1.8rem);
+    margin-bottom: 1rem;
+    color: hsl(210, 10%, 33%);
+    transition: font-size 0.7s ease;
+}
+
+
+span {
+    margin-bottom: 8.4rem;
+}
+
+.computer img{
+    width: 100%;
+    margin-block: 2rem;
+}
+
+h3 {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: hsl(210, 10%, 33%);
+}
+
+.devices img{
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+img {
+    margin-block: 1rem;
+}
+
+.companies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 150px;
+    
+}
+
+ul {
+    margin-block: 1.5rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: hsl(210, 10%, 33%);
+}
+
+.logo-small img{
+    margin-top: 3rem;
+    width: 56px;
+}
+
+.icon-wrapper {
+    margin-block: 1rem;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.gray-background {
+    background-color: hsl(201, 11%, 66%);
+    width: 100%;
+
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+}
+
+
+
+@media screen and (min-width: 805px) {
+
+    .logo {
+        padding-top: 6.5rem;
+        padding-bottom: 0rem;
+        width: 100%;
+        background: url(../images/bg-header-desktop.png) no-repeat center center/cover;
+    }
+
+    .section1-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+
+    .section1-text {
+        position: relative;
+        right: 100px;
+        top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: left;
+        margin-right: 4rem;
+        width: min(400px,100%);
+    }
+
+    .section1-text p {
+        font-size: 0.9rem;
+    }
+
+    .computer {
+        position: relative;
+        right: 150px;
+    }
+
+    .section2-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        width: min(1100px, 100%);
+    }
+    
+
+    .section2-wrapper p {
+        font-size: 0.9rem;
+    }
+
+    .section2-wrapper > * {
+        flex: 1;
+    }
+
+    .section2-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .companies {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: min(1100px,100%);
+        margin-top: 3rem;
+        margin-bottom: 0;
+        
+    }
+
+    .gray-background {
+        padding-block: 0.5rem; 
+    }
+
+
+    .footer-wrapper {
+        width: min(1100px, 100%);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+        margin-right: auto;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        text-align: left;
+    }
+
+    .logo-small img{
+        margin-block: 0;
+    }
+    
+    .computer img {
+        transition: transform 0.5s ease; /* Add transition for smooth animation */
+    }
+    
+    .computer.hiddenimg img {
+        transform: translateX(-100%); /* Initial position */
+    }
+    
+    .computer.showimg img {
+        transform: translateX(0); /* Final position */
+    }
+      
+}
+
+/*766*/
